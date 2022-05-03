@@ -1,0 +1,636 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat");
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: montserrat;
+	--webkit-scroll-behaviour: smooth;
+	flex-wrap: wrap;
+}
+
+@media (min-width:673px){
+
+	body{
+		width: 100%;
+		min-height: 100vh;
+	}
+
+	nav{
+		width: 100%;
+		height: 650px;
+		/*background: url(https://anurag.edu.in/wp-content/themes/Avada-Child-Theme/images/Anurag-College-Banner.jpg);*/
+		background-size: cover;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		transition: 1s;
+		position: absolute;
+	}
+
+	.navbar.sticky{
+		width: 100%;
+		height: 150px;
+		position: fixed;
+		background: rgba(255,255,255,0.9);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		z-index: 10;
+	}
+
+	.landingpage{
+		width: 100%;
+		height: 650px;
+		background: url(https://img.freepik.com/free-photo/sideview-students-prepearing-exams-university_7502-1123.jpg?w=826) no-repeat;
+		background-size: cover;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+	}
+
+	#aboutdetails *{
+		margin: auto;
+	}
+
+	#navheader{
+		width: 400px;
+		height: 100px;
+		background: url(https://anurag.edu.in/wp-content/uploads/2020/02/logo-1.png) no-repeat;
+		background-size: contain;
+		margin: 10px;
+	}
+
+	#navitemscontainer{
+		width: 900px;
+		height: 75px;
+		text-align: center;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 10px;
+	}
+
+	.navitems{
+		width: fit-content;
+		height: fit-content;
+		padding: 10px;
+		background: black;
+		color: white;
+	}
+
+	.aboutsection{
+		width: 100%;
+		height: 600px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		background: #FF8080;
+	}
+
+	#aboutimage{
+		width: 400px;
+		height: 400px;
+		background: url(https://img.freepik.com/free-vector/study-abroad-concept-illustration_114360-7493.jpg) no-repeat;
+		background-size: contain;
+		margin: auto;
+	}
+
+	#headertitle{
+		color: white;
+		background: black;
+		padding: 10px;
+	}
+
+	#aboutdetails{
+		width: 700px;
+		height: 80%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		background: rgba(255,255,255,0.3);
+		margin: auto;
+	}
+
+	#aboutdetails *{
+		margin: 20px;
+	}
+
+	.sponsorsandreferences{
+		width: 100%;
+		height: 100vh;
+		text-align: center;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		align-items: center;
+		background: #F56D91;
+		overflow: hidden;
+	}
+
+	.sponsorsandreferences *{
+		margin: auto 0;
+	}
+
+	#sponsorcontainer{
+		width: 90%;
+		height: 600px;
+		background: rgba(255,255,255,0.3);
+		overflow: hidden;
+	}
+
+	.contactandbusinessinfo{
+		width: 100%;
+		height: 600px;
+		background: #ccc;
+		display: flex;
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+	.contactandcollegeinfo{
+		width: 100%;
+		height: 600px;
+		background: #1B3C59;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.contactandcollegeinfo *{
+		margin: 20px;
+	}
+
+	#contactinfo{
+		width: 400px;
+		height: 500px;
+		background: #eee;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+		margin: auto;
+	}
+
+	#collegeinfocontainer{
+		width: 700px;
+		height: 500px;
+		background: #999;
+		margin: auto;
+	}
+
+
+	#collegesitemap{
+		width: 400px;
+		height: 400px;
+	}
+
+	footer{
+		width: 100%;
+		height: fit-content;
+		color: white;
+		background: black;
+		text-align: center;
+		margin: 10px 0;
+		font-size: 1.1em;
+		padding: 2px;
+	}
+
+	#contactbutton{
+		width: 100px;
+		height: 50px;
+		border: none;
+		background: #FD5D5D;
+		color: white;
+	}
+
+	#collegelogo{
+		width: 300px;
+		height: 300px;
+		background: url() no-repeat;
+		background-size: contain;
+		border-radius: 50%;  
+	}
+
+	/* reach out to us.html */
+
+
+	#contactnavbar{
+		width: 100%;
+		height: 650px;
+		background: url(https://img.freepik.com/free-photo/sideview-students-prepearing-exams-university_7502-1123.jpg?w=826) no-repeat;
+		/*background: url(https://anurag.edu.in/wp-content/themes/Avada-Child-Theme/images/Anurag-College-Banner.jpg);*/
+		background-size: cover;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		transition: 2s;
+		position: relative;
+	}
+
+	.contactus{
+		width: 100%;
+		height: 700px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		background: #693F27;
+		margin: auto;
+	}
+
+	#contactform{
+		width: 700px;
+		height: 600px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: rgba(255,255,255,0.3);
+		margin: auto;
+	}
+
+	form > h1{
+		margin: auto;
+	}
+
+	input[type=text]{
+		width: 450px;
+		height: 30px;
+		margin: 10px 0;
+		text-align: center;
+		border: none;
+		border-radius: 2px;
+	}
+
+	textarea{
+		width: 550px;
+		height: 100px;
+		resize: vertical;
+		text-align: center;
+		margin: 20px 0;
+		border: none;
+	}
+
+	#contactimage{
+		width: 700px;
+		height: 450px;
+		background: url(https://img.freepik.com/free-photo/smiling-happy-indian-student-with-backpack-pointing-his-finger-wall_496169-1532.jpg) no-repeat;
+		background-size: cover; 
+		margin: 20px;
+		margin: auto;
+	}
+
+	#submit{
+		width: 100px;
+		background: pink;
+		border-radius: 0;
+		margin: auto;
+		font-size: 1.1em;
+	}
+
+	.aboutusbody{
+		background: #A8E4B1;
+	}
+
+	.aboutussection{
+		width: 90%;
+		height: 400px;
+		margin: auto;
+		padding: 30px;
+		background: rgba(255,255,255,0.5);
+		display: flex;
+		align-items: center;
+		justify-content: center;	
+	}
+	.landinpage h1{
+		margin: auto;
+		font-size: 6em;
+		background: rgba(0,0,0,0.5);
+	}
+}
+
+
+@media (max-width:673px){
+	body{
+		width: 100%;
+		min-height: 100vh;
+	}
+
+	nav{
+		width: 100vw;
+		height: 300px;
+		/*background: url(https://anurag.edu.in/wp-content/themes/Avada-Child-Theme/images/Anurag-College-Banner.jpg);*/
+		background-size: cover;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		transition: 1s;
+		position: absolute;
+	}
+
+	.navbar.sticky{
+		width: 100vw;
+		height: 150px;
+		position: fixed;
+		background: rgba(255,255,255,0.9);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		z-index: 10;
+		overflow: hidden;
+		bottom: 10px;
+	}
+
+	.navbar.sticky .navitems{
+		font-size: 0.5em;
+	}
+
+	.landingpage{
+		width: 100%;
+		height: 650px;
+		background: url(https://img.freepik.com/free-photo/sideview-students-prepearing-exams-university_7502-1123.jpg?w=826) no-repeat;
+		background-size: cover;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+	}
+
+	.landinpage h1{
+		margin: auto;
+		font-size: 2em;
+		background: rgba(0,0,0,0.5);
+	}
+
+	#aboutdetails *{
+		margin: auto;
+	}
+
+	#navheader{
+		width: 400px;
+		height: 100px;
+		background: url(https://anurag.edu.in/wp-content/uploads/2020/02/logo-1.png) no-repeat;
+		background-size: contain;
+		margin: 10px;
+	}
+
+	#navitemscontainer{
+		width: 900px;
+		height: 75px;
+		text-align: center;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 10px;
+	}
+
+	.navitems{
+		width: fit-content;
+		height: fit-content;
+		padding: 10px;
+		background: black;
+		display: block;
+		color: white;
+		margin: 5px;
+	}
+
+	.aboutsection{
+		width: 100%;
+		height: 600px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		background: #FF8080;
+	}
+
+	#aboutimage{
+		width: 400px;
+		height: 400px;
+		background: url(https://img.freepik.com/free-vector/study-abroad-concept-illustration_114360-7493.jpg) no-repeat;
+		background-size: contain;
+		margin: auto;
+	}
+
+	#headertitle{
+		color: white;
+		background: black;
+		padding: 10px;
+	}
+
+	#aboutdetails{
+		width: 700px;
+		height: 80%;
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		background: rgba(255,255,255,0.3);
+		margin: auto;
+	}
+
+	#aboutdetails *{
+		margin: 20px;
+	}
+
+	.sponsorsandreferences{
+		width: 100%;
+		height: 100vh;
+		text-align: center;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		align-items: center;
+		background: #F56D91;
+		overflow: hidden;
+	}
+
+	.sponsorsandreferences *{
+		margin: auto 0;
+	}
+
+	#sponsorcontainer{
+		width: 90%;
+		height: 600px;
+		background: rgba(255,255,255,0.3);
+		overflow: hidden;
+	}
+
+	.contactandbusinessinfo{
+		width: 100%;
+		height: 600px;
+		background: #ccc;
+		display: flex;
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+	.contactandcollegeinfo{
+		width: 100%;
+		height: 600px;
+		background: #1B3C59;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.contactandcollegeinfo *{
+		margin: 20px;
+	}
+
+	#contactinfo{
+		width: 400px;
+		height: 500px;
+		background: #eee;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+		margin: auto;
+	}
+
+	#collegeinfocontainer{
+		width: 700px;
+		height: 500px;
+		display: none;
+		background: #999;
+		margin: auto;
+	}
+
+
+	#collegesitemap{
+		width: 400px;
+		height: 400px;
+	}
+
+	footer{
+		width: 100%;
+		height: fit-content;
+		color: white;
+		background: black;
+		text-align: center;
+		margin: 10px 0;
+		font-size: 1.1em;
+		padding: 2px;
+	}
+
+	#contactbutton{
+		width: 100px;
+		height: 50px;
+		border: none;
+		background: #FD5D5D;
+		color: white;
+	}
+
+	#collegelogo{
+		width: 300px;
+		height: 300px;
+		background: url() no-repeat;
+		background-size: contain;
+		border-radius: 50%;  
+	}
+
+	/* reach out to us.html */
+
+
+	#contactnavbar{
+		width: 100%;
+		height: 650px;
+		background: url(https://img.freepik.com/free-photo/sideview-students-prepearing-exams-university_7502-1123.jpg?w=826) no-repeat;
+		/*background: url(https://anurag.edu.in/wp-content/themes/Avada-Child-Theme/images/Anurag-College-Banner.jpg);*/
+		background-size: cover;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		transition: 2s;
+		position: relative;
+	}
+
+	.contactus{
+		width: 100%;
+		height: 700px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		background: #693F27;
+		margin: auto;
+	}
+
+	#contactform{
+		width: 700px;
+		height: 600px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: rgba(255,255,255,0.3);
+		margin: auto;
+	}
+
+	form > h1{
+		margin: auto;
+	}
+
+	input[type=text]{
+		width: 450px;
+		height: 30px;
+		margin: 10px 0;
+		text-align: center;
+		border: none;
+		border-radius: 2px;
+	}
+
+	textarea{
+		width: 550px;
+		height: 100px;
+		resize: vertical;
+		text-align: center;
+		margin: 20px 0;
+		border: none;
+	}
+
+	#contactimage{
+		width: 700px;
+		height: 450px;
+		background: url(https://img.freepik.com/free-photo/smiling-happy-indian-student-with-backpack-pointing-his-finger-wall_496169-1532.jpg) no-repeat;
+		background-size: cover; 
+		margin: 20px;
+		margin: auto;
+	}
+
+	#submit{
+		width: 100px;
+		background: pink;
+		border-radius: 0;
+		margin: auto;
+		font-size: 1.1em;
+	}
+
+	.aboutusbody{
+		background: #A8E4B1;
+	}
+
+	.aboutussection{
+		width: 90%;
+		height: 400px;
+		margin: auto;
+		padding: 30px;
+		background: rgba(255,255,255,0.5);
+		display: flex;
+		align-items: center;
+		justify-content: center;	
+	}
+}

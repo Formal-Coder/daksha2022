@@ -1,0 +1,6 @@
+Title: Anurag University website clone
+
+Technologies used: HTML, CSS, JAVASCRIPT
+
+Description: 
+The site contains the 

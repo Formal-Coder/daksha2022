@@ -19,7 +19,7 @@
 
 	nav{
 		width: 100%;
-		height: 650px;
+		height: auto;
 		/*background: url(https://anurag.edu.in/wp-content/themes/Avada-Child-Theme/images/Anurag-College-Banner.jpg);*/
 		background-size: cover;
 		display: flex;
@@ -31,7 +31,7 @@
 
 	.navbar.sticky{
 		width: 100%;
-		height: 150px;
+		height: auto;
 		position: fixed;
 		background: rgba(255,255,255,0.9);
 		display: flex;
@@ -55,21 +55,20 @@
 	}
 
 	#navheader{
-		width: 400px;
-		height: 100px;
+		width: 300px;
+		height: 40px;
 		background: url(https://anurag.edu.in/wp-content/uploads/2020/02/logo-1.png) no-repeat;
 		background-size: contain;
-		margin: 10px;
+		margin: 20px;
 	}
 
 	#navitemscontainer{
-		width: 900px;
+		width: auto;
 		height: 75px;
 		text-align: center;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin: 0 10px;
 	}
 
 	.navitems{
@@ -88,6 +87,7 @@
 		justify-content: space-between;
 		align-items: center;
 		background: #FF8080;
+		overflow: hidden;
 	}
 
 	#aboutimage{
@@ -108,6 +108,7 @@
 		width: 700px;
 		height: 80%;
 		display: flex;
+		flex-wrap: wrap;
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
@@ -121,14 +122,16 @@
 
 	.sponsorsandreferences{
 		width: 100%;
-		height: 100vh;
+		height: auto;
 		text-align: center;
 		display: flex;
-		justify-content: space-between;
-		flex-direction: column;
+		justify-content: center;
+		flex-direction: row;
 		align-items: center;
 		background: #F56D91;
 		overflow: hidden;
+		padding: 20px;
+		gap: 10px;
 	}
 
 	.sponsorsandreferences *{
@@ -161,6 +164,7 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
+		overflow: hidden;
 	}
 
 	.contactandcollegeinfo *{
@@ -181,7 +185,8 @@
 
 	#collegeinfocontainer{
 		width: 700px;
-		height: 500px;
+		height: auto;
+		overflow-y: scroll;
 		background: #999;
 		margin: auto;
 	}
@@ -325,33 +330,32 @@
 	}
 
 	nav{
-		width: 100vw;
-		height: 300px;
+		width: 100%;
+		height: auto;
 		/*background: url(https://anurag.edu.in/wp-content/themes/Avada-Child-Theme/images/Anurag-College-Banner.jpg);*/
 		background-size: cover;
 		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+		/*flex-direction: row;*/
+		justify-content: center;
 		transition: 1s;
 		position: absolute;
+		align-items: center;
+		font-size: 0.6em;
 	}
 
 	.navbar.sticky{
-		width: 100vw;
+		width: 100%;
 		height: 150px;
 		position: fixed;
+		top: 0px;
 		background: rgba(255,255,255,0.9);
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
 		z-index: 10;
-		overflow: hidden;
-		bottom: 10px;
+		font-size: 0.6em;
 	}
 
-	.navbar.sticky .navitems{
-		font-size: 0.5em;
-	}
 
 	.landingpage{
 		width: 100%;
@@ -374,11 +378,10 @@
 	}
 
 	#navheader{
-		width: 400px;
-		height: 100px;
+		width: 300px;
+		height: 40px;
 		background: url(https://anurag.edu.in/wp-content/uploads/2020/02/logo-1.png) no-repeat;
 		background-size: contain;
-		margin: 10px;
 	}
 
 	#navitemscontainer{
@@ -388,7 +391,6 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin: 0 10px;
 	}
 
 	.navitems{
@@ -446,11 +448,10 @@
 		height: 100vh;
 		text-align: center;
 		display: flex;
-		justify-content: space-between;
-		flex-direction: column;
+		justify-content: center;
+		flex-direction: row;
 		align-items: center;
 		background: #F56D91;
-		overflow: hidden;
 	}
 
 	.sponsorsandreferences *{
@@ -458,10 +459,11 @@
 	}
 
 	#sponsorcontainer{
-		width: 90%;
-		height: 600px;
+		width: 100vw;
+		height: 100vh;
 		background: rgba(255,255,255,0.3);
 		overflow: hidden;
+		transform: scale(0.75);
 	}
 
 	.contactandbusinessinfo{
